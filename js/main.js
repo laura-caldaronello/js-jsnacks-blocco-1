@@ -1,6 +1,7 @@
 $(document).ready(function() {
-
+    
 // esercizio 1
+// Crea un array di 10 oggetti che rappresentano una zucchina, indicando per ognuna varietà, peso e lunghezza.
 
 var zucchine = [
     {
@@ -55,6 +56,8 @@ var zucchine = [
     }
 ];
 
+// Calcola quanto pesano tutte le zucchine.
+
 var pesoTot = 0;
 for (var i = 0; i < zucchine.length; i++) {
     pesoTot += zucchine[i].peso;
@@ -64,6 +67,8 @@ console.log('peso totale: ' + pesoTot);
 // /esercizio 1
 
 // esercizio 2
+// Crea 10 oggetti che rappresentano una zucchina (sfrutto i 10 oggetti contenuti nell'array precedente)
+// Dividi in due array separati le zucchine che misurano meno o più di 15cm
 
 var under15 = [];
 var overEqual15 = [];
@@ -80,19 +85,24 @@ var pesoUnder = 0;
 for (var i = 0; i < under15.length; i++) {
     pesoUnder += under15[i].peso;
 }
-console.log(under15);
-console.log('peso zucchine piccole: ' + pesoUnder);
 
 var pesoOver = 0;
 for (var i = 0; i < overEqual15.length; i++) {
     pesoOver += overEqual15[i].peso;
 }
+
+// Infine stampa separatamente quanto pesano i due gruppi di zucchine
+
+console.log(under15);
+console.log('peso zucchine piccole: ' + pesoUnder);
+
 console.log(overEqual15)
 console.log('peso zucchine grandi: ' + pesoOver);
 
 // /esercizio 2
 
 // esercizio 3
+// Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (es. Ciao -> oaiC)
 
 var userString = prompt('scrivi una stringa da girare');
 var newString = [];
