@@ -105,13 +105,11 @@ console.log('peso zucchine grandi: ' + pesoOver);
 // Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (es. Ciao -> oaiC)
 
 var userString = prompt('scrivi una stringa da girare');
-var newString = [];
+var newString = '';
 
 for (var i = 0; i < userString.length; i++) {
-    newString[i] = userString[userString.length - 1 - i];
+    newString += userString[userString.length - 1 - i];
 }
-newString = String(newString);
-newString = newString.replace(/,/g,'');
 console.log(newString);
 
 // /esercizio 3
